@@ -6,6 +6,16 @@
         <p class="title">Cambiar nombre <span v-if="user.displayName">({{user.displayName}})</span></p>
         <ChangeName />
       </div>
+
+      <div class="account__section">
+        <p class="title">Cambiar email <span>({{user.email}})</span></p>
+        <ChangeEmail />
+      </div>
+
+      <div class="account__section">
+        <p class="title">Cambiar contraseña</p>
+        <ChangePassword />
+      </div>
     </BasicLayout>
   </div>
 </template>
@@ -14,11 +24,15 @@ import {computed} from "vue";
 import {useStore} from "vuex";
 import BasicLayout from "../layouts/BasicLayout";
 import ChangeName from "../components/Account/ChangeName";
+import ChangeEmail from "../components/Account/ChangeEmail";
+import ChangePassword from "../components/Account/ChangePassword";
 export default {
   name: "Account",
   components: {
     BasicLayout,
-    ChangeName
+    ChangeName,
+    ChangeEmail,
+    ChangePassword
   },
   setup() {
     const store = useStore();
