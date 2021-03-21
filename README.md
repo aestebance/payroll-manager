@@ -1,4 +1,4 @@
-## Project in Vue that simulates tweet feed
+## Project in Vue that simulates payroll manager
 
 Technologies:
 
