@@ -12,7 +12,6 @@
     </div>
   </div>
 </template>
-
 <script>
 import {auth, db} from "../../utils/firebase";
 import moment from "moment";
